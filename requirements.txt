@@ -1,0 +1,16 @@
+pymongo==2.3
+gunicorn
+IPy
+bitarray
+msgpack-python
+httplib2
+oauth2
+blinker
+python-memcached
+apns
+mock
+pyapns
+pycrypto
+redis
+simplejson
+pytest

@@ -1,0 +1,20 @@
+box: wercker/python
+services:
+    - wercker/mongodb
+    - mies/memcached
+build:
+    steps:
+        - pip-install
+        - script:
+            name: echo "py.test tests/ -v"
+            code: |
+                  py.test tests/ -v
+    after-steps:
+        - hipchat-notify:
+            token: $HIPCHAT_TOKEN
+            room-id: 263181
+            from-name: '萌'
+            passed-message: '@all 萌のbuild成功したよ'
+            failed-message: '@all 萌のbuild失敗したよ'
+            passed-color: green
+            failed-color: red
