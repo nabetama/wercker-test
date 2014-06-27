@@ -16,6 +16,6 @@ build:
             from-name: 'nabetama'
             passed-message: 'test passed message'
             failed-message: 'test failed message'
-            passed-color: green
+            passed-color: gray
             failed-color: red
             target-branch: master
