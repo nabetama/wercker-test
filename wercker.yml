@@ -10,11 +10,11 @@ build:
             code: |
                   py.test tests/ -v
     after-steps:
-        - hipchat-notify:
+        - nabetama/hipchat-notify:
             token: $HIPCHAT_TOKEN
-            room-id: 263181
-            from-name: '萌'
-            passed-message: '@all 萌のbuild成功したよ'
-            failed-message: '@all 萌のbuild失敗したよ'
+            room-id: $HIPCHAT_ROOM
+            from-name: 'nabetama'
+            passed-message: 'test-passed-message'
+            failed-message: 'test-failed-message'
             passed-color: green
             failed-color: red
