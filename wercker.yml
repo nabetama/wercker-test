@@ -14,8 +14,8 @@ build:
             token: $HIPCHAT_TOKEN
             room-id: $HIPCHAT_ROOM
             from-name: 'nabetama'
-            passed-message: 'test passed message'
-            failed-message: 'test failed message'
+            passed-message: 'Test passed message'
+            failed-message: 'Test failed message'
             passed-color: gray
             failed-color: red
             target-branch: master
