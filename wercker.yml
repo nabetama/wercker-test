@@ -18,3 +18,4 @@ build:
             failed-message: 'test-failed-message'
             passed-color: green
             failed-color: red
+            target-branch: master
