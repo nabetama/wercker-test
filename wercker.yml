@@ -4,7 +4,7 @@ services:
     - mies/memcached
 build:
     steps:
-        - virtualenv:
+        - nabetama/virtualenv:
             name: set up virtualenv
             python_location: /usr/bin/python2.6
         - script:
