@@ -4,6 +4,9 @@ services:
     - mies/memcached
 build:
     steps:
+        - virtualenv:
+            name: set up virtualenv
+            python_location: /usr/bin/python2.6
         - pip-install
         - script:
             name: echo "py.test tests/ -v"
