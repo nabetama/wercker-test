@@ -4,6 +4,11 @@ services:
     - mies/memcached
 build:
     steps:
+        - nabetama/virtualenv:
+            name: set up virtualenv
+            #python_location: /usr/bin/python2.6
+        - script:
+            code: echo `which python`
         - pip-install
         - script:
             name: echo "py.test tests/ -v"
