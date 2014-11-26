@@ -3,6 +3,7 @@ build:
     steps:
         - nabetama/virtualenv:
             name: set up virtualenv
+        - pip-install
         - script:
             name: "py.test tests/ -v"
             code: |
