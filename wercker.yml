@@ -15,10 +15,10 @@ build:
             code: |
                   py.test tests/ -v
     after-steps:
-        - nabetama/hipchat-notify:
+      - nabetama/hipchat-notify-v2:
             token: $HIPCHAT_TOKEN
-            room-id: $HIPCHAT_ROOM
-            from-name: 'nabetama'
+            room-id: $ROOM_ID
+            from-name: 'tamabot'
             passed-message: 'Test passed message'
             failed-message: 'Test failed message'
             passed-color: gray
