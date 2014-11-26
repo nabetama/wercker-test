@@ -4,7 +4,7 @@ build:
         - nabetama/virtualenv:
             name: set up virtualenv
         - script:
-            name: echo "py.test tests/ -v"
+            name: "py.test tests/ -v"
             code: |
                   py.test tests/ -v
     after-steps:
