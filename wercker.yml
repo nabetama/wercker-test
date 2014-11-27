@@ -15,6 +15,6 @@ build:
             from-name: 'tamabot'
             passed-message: 'Test passed message'
             failed-message: 'Test failed message'
-            passed-color: gray
+            passed-color: green
             failed-color: red
             target-branch: master
