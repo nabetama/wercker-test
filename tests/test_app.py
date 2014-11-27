@@ -10,5 +10,5 @@ class TestApp(object):
     def test_app(self):
         assert True
 
-    def test_app2(self):
-        assert True
+#     def test_app2(self):
+#         assert True
