@@ -1,1 +1,2 @@
 pytest
+hypchat==0.16
