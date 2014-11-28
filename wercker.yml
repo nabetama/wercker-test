@@ -9,7 +9,7 @@ build:
             code: |
                   py.test tests/ -v
     after-steps:
-      - nabetama/hipchat-notify-v2:
+      - nabetama/hipchat-notify-v2@0.0.6:
             token: $HIPCHAT_TOKEN
             room-id: $ROOM_ID
             from-name: 'tamabot'
