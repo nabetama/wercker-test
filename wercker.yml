@@ -9,10 +9,10 @@ build:
             code: |
                   py.test tests/ -v
         - script:
-          name: 'pip install hypchat'
-          sudo: yes
-          code: |
-            pip install hypchat
+            name: 'pip install hypchat'
+            sudo: yes
+            code: |
+              pip install hypchat
     after-steps:
       - nabetama/hipchat-notify-v2@0.0.6:
             token: $HIPCHAT_TOKEN
