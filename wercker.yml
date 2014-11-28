@@ -11,8 +11,8 @@ build:
         - script:
           name: 'pip install hypchat'
           sudo: yes
-            code: |
-              pip install hypchat
+          code: |
+            pip install hypchat
     after-steps:
       - nabetama/hipchat-notify-v2@0.0.6:
             token: $HIPCHAT_TOKEN
