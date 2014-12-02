@@ -3,6 +3,10 @@ build:
     steps:
         - nabetama/virtualenv:
             name: set up virtualenv
+        - script:
+            name: "Use python 2.6"
+            code: |
+              alias python=python2.6
         - pip-install
         - script:
             name: "py.test tests/ -v"
