@@ -13,6 +13,12 @@ build:
             code: |
                   py.test tests/ -v
         - script:
+            name: "python version"
+            code: |
+              echo "python version $(python --version) running"
+              echo "pip version $(pip --version) running"
+              pip freeze
+        - script:
             name: 'pip install hypchat'
             sudo: yes
             code: |
